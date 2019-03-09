@@ -18,6 +18,7 @@ Search replace the following. Be sure to match the case. In PHPStorm select `Mat
 * DG_ -> Yourtheme_
 * dg_ -> yourtheme_
 * dg-elementor -> yourtheme
+* DG Elementor -> Yourtheme
 
 ### License
 
