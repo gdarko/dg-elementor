@@ -1,6 +1,7 @@
 .idea/
 node_modules/
 .sass-cache/
+assets/sass/.sass-cache/
 build/
 log/
 vendor/

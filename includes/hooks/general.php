@@ -16,7 +16,7 @@ function dg_elementor_setup_theme() {
 	add_theme_support( 'automatic-feed-links' );
 	add_theme_support( 'title-tag' );
 	add_theme_support( 'html5', array( 'search-form', 'comment-form', 'comment-list', 'gallery', 'caption', ) );
-	add_theme_support( 'custom-logo', array( 'height' => 100, 'width' => 350, ) );
+	add_theme_support( 'custom-logo');
 	add_editor_style( 'editor-style.css' );
 
 	// WooCommerce if any
@@ -37,7 +37,12 @@ add_action( 'after_setup_theme', 'dg_elementor_setup_theme' );
 function dg_elementor_enqueue_scripts() {
 
 	// Styles
-	wp_enqueue_style( 'dg-elementor', get_stylesheet_uri() );
+	wp_enqueue_style(
+		'dg-elementor',
+		get_template_directory_uri() . '/assets/css/theme.min.css',
+		null,
+		filemtime(get_template_directory() . '/assets/css/theme.css')
+	);
 
 	// Remove gutenberg block library bloat
 	wp_dequeue_style( 'wp-block-library' );
