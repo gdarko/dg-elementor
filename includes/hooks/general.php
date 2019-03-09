@@ -17,8 +17,6 @@ function dg_elementor_setup_theme() {
 	add_theme_support( 'title-tag' );
 	add_theme_support( 'html5', array( 'search-form', 'comment-form', 'comment-list', 'gallery', 'caption', ) );
 	add_theme_support( 'custom-logo');
-	add_editor_style( 'editor-style.css' );
-
 	// WooCommerce if any
 	if ( class_exists( 'WooCommerce' ) ) {
 		add_theme_support( 'woocommerce' );
@@ -27,7 +25,6 @@ function dg_elementor_setup_theme() {
 		add_theme_support( 'wc-product-gallery-slider' );
 	}
 }
-
 add_action( 'after_setup_theme', 'dg_elementor_setup_theme' );
 
 
