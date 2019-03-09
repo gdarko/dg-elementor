@@ -1,0 +1,34 @@
+/*
+Theme Name: DG Elementor
+Theme URI: https://github.com/gdarko/dg-elementor
+Description: Plain theme for building sites with elementor
+Author: Darko Gjorgjijoski
+Author URI: https://darkog.com/
+Version: 1.0.0
+Text Domain: dg-elementor
+*/
+
+// Root
+@import "custom/custom_variables";
+@import "reset/variables";
+
+// Base CSS (Based on Normalize)
+@import "reset/reset";
+
+// Comments
+@import "reset/comments";
+
+// Forms/
+@import "reset/forms";
+
+// Table
+@import "reset/table";
+
+// List
+@import "reset/list";
+
+// WordPress
+@import "reset/wordpress";
+
+// Custom Code for Your Website
+@import "custom/custom";
